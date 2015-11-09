@@ -1,0 +1,8 @@
+.gradle
+build
+*.ipr
+*.iml
+*.iws
+*.xls
+out
+xls
