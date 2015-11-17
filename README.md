@@ -28,12 +28,12 @@ If the repository does not contain a translation to your language, you can make 
 
 ### Common Components Translation
 
-To localize the common components, it is sufficent to translate only the _main message packs_ of the *cuba* base project:
+To localize the common components, it is sufficent to translate only the _main message packs_ of the **cuba** base project:
 
 - Copy the following English files to your project:
 	- `content/en/{version}/cuba/modules/gui/src/com/haulmont/cuba/gui/messages.properties`
 	- `content/en/{version}/cuba/modules/web/src/com/haulmont/cuba/web/messages.properties`
-	- `content/en/{version}/cuba/modules/desktop/src/com/haulmont/cuba/desktop/messages.properties` (only if you use *desktop* module)
+	- `content/en/{version}/cuba/modules/desktop/src/com/haulmont/cuba/desktop/messages.properties` (only if you use the **desktop** module)
 - Rename the files for the required locale, for example `messages_zz.properties`.
 - Translate the messages.
 - Add the new locale to the _Project Properties_ > _Available locales_ list, for example `Zzzzzz|zz`.
@@ -51,14 +51,16 @@ If you want to translate all messages in XLS, do the following:
 	- Unzip the contents of `tools/mp2xls/build/install/mp2xls-*.zip` archive to a local directory.
 
 - Read English messages into the XLS file by running the following command:
-	bin/mp2xls -r -d {absolute path to repo}/content/en/{version}/cuba -f {absolute path to XLS}/cuba.xls -l en
+	
+		bin/mp2xls -r -d {absolute path to repo}/content/en/{version}/cuba -f {absolute path to XLS}/cuba.xls -l en
 
 - Open the XLS file and rename `default` column to your language identifier, for example `zz`.
 
 - Translate messages in this column into your language. Leave hidden rows marked red as is.
 
 - Write translated messages back into files:
-	bin/mp2xls -w -d {absolute path to repo}/content/zz/{version}/cuba -f {absolute path to XLS}/cuba.xls -l zz	
+	
+		bin/mp2xls -w -d {absolute path to repo}/content/zz/{version}/cuba -f {absolute path to XLS}/cuba.xls -l zz
 
 Now you have the set of `messages_zz.properties` files which you can copy into your project as explained above.
 
