@@ -41,7 +41,7 @@ To localize the common components, it is sufficent to translate only the _main m
 
 ### Full Translation
 
-For full localization, you can copy all message files from the English locale and translate them directly, or use our **msg2xls** tool. This command line tool allows you to convert message files into XLS format, translate the messages in Microsoft Excel or Open Office, and then convert the messages back into `messages.properties` format.
+For full localization, you can copy all message files from the English locale and translate them directly, or use our **mp2xls** tool. This command line tool allows you to convert message files into XLS format, translate the messages in Microsoft Excel or Open Office, and then convert the messages back into `messages.properties` format.
 
 If you want to translate all messages in XLS, do the following:
 
@@ -54,7 +54,7 @@ If you want to translate all messages in XLS, do the following:
 	
 		bin/mp2xls -r -d {absolute path to repo}/content/en/{version}/cuba -f {absolute path to XLS}/cuba.xls -l en
 
-- Open the XLS file and rename `default` column to your language identifier, for example `zz`.
+- Open the XLS file and add a new column for your language next to the `default` column. Give it a title denoting the language, for example `zz`.
 
 - Translate messages in this column into your language. Leave hidden rows marked red as is.
 
