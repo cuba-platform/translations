@@ -1,6 +1,6 @@
 # CUBA Platform Translations
 
-This repository contains third-party translations for the [CUBA platform](https://www.cuba-platform.com) screens and common UI components, as well as localization tools. 
+This repository contains third-party translations for the <a href="https://www.cuba-platform.com" target="_blank">CUBA platform</a> screens and common UI components, along with localization tools, which provide the facilities for batch localization. 
 
 Translations are stored as sets of `messages.properties` files separated by language and platform version under the `content` directory. Each language/version directory contains subdirectories corresponding to the platform base projects (**cuba**, **reports**, etc.).
 
@@ -28,7 +28,7 @@ If the repository does not contain a translation to your language, you can make 
 
 ### Common Components Translation
 
-To localize the common components, it is sufficent to translate only the _main message packs_ of the **cuba** base project:
+To localize the common components, it is sufficient to translate only the _main message packs_ of the **cuba** base project:
 
 - Copy the following English files to your project:
 	- `content/en/{version}/cuba/modules/gui/src/com/haulmont/cuba/gui/messages.properties`
@@ -56,7 +56,7 @@ If you want to translate all messages in XLS, do the following:
 
 - Open the XLS file and add a new column for your language next to the `default` column. Give it a title denoting the language, for example `zz`.
 
-- Translate messages in this column into your language. Leave hidden rows marked red as is.
+- Translate messages in this column into your language. Leave hidden rows which are marked red as they are.
 
 - Write translated messages back into files:
 	
@@ -64,7 +64,7 @@ If you want to translate all messages in XLS, do the following:
 
 Now you have the set of `messages_zz.properties` files which you can copy into your project as explained above.
 
-We would appreciate if you send us your translation to include into the repository!
+We would appreciate it if you could send us your translations to include in the repository!
 
 ## Credits
 
