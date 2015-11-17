@@ -32,13 +32,12 @@ apply plugin: 'application'
 mainClassName = 'com.haulmont.mp2xls.MessagePropertiesProcessor'
 
 repositories {
-    mavenLocal()
     maven {
+        url 'https://repo.cuba-platform.com/content/groups/work'
         credentials {
-            username System.getenv('HAULMONT_REPOSITORY_USER')
-            password System.getenv('HAULMONT_REPOSITORY_PASSWORD')
+            username(rootProject.hasProperty('repoUser') ? rootProject['repoUser'] : 'cuba')
+            password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : 'cuba123')
         }
-        url "http://repository.haulmont.com:8587/nexus/content/groups/work"
     }
 }
 
@@ -58,7 +57,7 @@ sourceSets {
 distZip {
     destinationDir = new File("$buildDir/install")
     def dateString = new SimpleDateFormat('ddMMyyyy-HHmm').format(new Date())
-    archiveName = "localizer-${branchVersion}-${dateString}.${extension}"
+    archiveName = "mp2xls-${branchVersion}-${dateString}.${extension}"
 }
 
 task read(dependsOn: ['assemble'], description: 'Read properties ') << {
@@ -84,4 +83,8 @@ task write(dependsOn: ['assemble'], description: 'Write properties ') << {
         classpath(rootProject.sourceSets.main.compileClasspath, rootProject.sourceSets.main.output.classesDir, rootProject.sourceSets.main.output.resourcesDir)
         args = ["$mod", "--sourceDir=$sourceDir", "--lcFile=$lcFile", "--logFile=$logFile", "--scanLanguages=$scanLanguages"]
     }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.6'
 }
