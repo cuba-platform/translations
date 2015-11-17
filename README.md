@@ -68,4 +68,4 @@ We would appreciate if you send us your translation to include into the reposito
 
 ## Credits
 
-The German translation is provided by [Mario David](http://www.road-to-cuba-and-beyond.com/).
+The German translation is provided by [Mario David](http://www.road-to-cuba-and-beyond.com/){:target="_blank"}.
