@@ -17,7 +17,7 @@ You can use the repository contents in the following ways:
 - Add the new locale to the _Project Properties_ > _Available locales_ list in Studio, for example `Deutsch|de`.
 - Restart your application server.
 
-To modify the translation in your project, edit the `messages_*.properties` files located inside `com.haulmont` package. If you think that some translation is incorrect, please send us your variant (as a pull request or individual files), and we will include it into the repository.
+To modify the translation in your project, edit the `messages_*.properties` files located inside `com.haulmont` package. If you think that some translation is incorrect, please send us your variant (as a pull request or individual files), and we will include it in the repository.
 
 ## Creating a New Translation
 
@@ -77,7 +77,7 @@ If you want to translate all messages in XLS, do the following:
 		
 Now you have the set of `messages_zz.properties` files which you can copy into your project as explained above.
 
-We would appreciate it if you could send us your translations to include to the repository!
+We would appreciate it if you could send us your translations to include in the repository!
 
 ## Credits
 
