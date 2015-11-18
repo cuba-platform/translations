@@ -55,6 +55,12 @@ If you want to translate all messages in XLS, do the following:
 	
 	Here and below `{repo_path}` is the absolute path to the root of the cloned or unzipped translation repository, `{xls_path}` is the absolute path to the directory where the XLS file will be created.
 
+	Example for Windows:
+		
+		c:
+		mkdir \work\xls
+		mp2xls -r -d c:\work\platform-translations\content\en\6_0\cuba -f c:\work\xls\cuba.xls -l en
+
 - Open the XLS file and add a new column for your language next to the `default` column. Give it a title denoting the language, for example `zz`.
 
 - Translate messages in this column into your language. Leave hidden rows which are marked red as they are.
@@ -63,6 +69,12 @@ If you want to translate all messages in XLS, do the following:
 	
 		mp2xls -w -d {repo_path}/content/zz/{version}/cuba -f {xls_path}/cuba.xls -l zz
 
+	Example for Windows:
+		
+		c:
+		mkdir \work\platform-translations\content\zz\6_0\cuba
+		mp2xls -w -d c:\work\platform-translations\content\zz\6_0\cuba -f c:\work\xls\cuba.xls -l zz
+		
 Now you have the set of `messages_zz.properties` files which you can copy into your project as explained above.
 
 We would appreciate it if you could send us your translations to include in the repository!
