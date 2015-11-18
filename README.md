@@ -17,7 +17,7 @@ You can use the repository contents in the following ways:
 - Add the new locale to the _Project Properties_ > _Available locales_ list in Studio, for example `Deutsch|de`.
 - Restart your application server.
 
-To modify the translation in your project, edit the `messages_*.properties` files located inside `com.haulmont` package. If you think that some translation is incorrect, please send us your variant, and we will include it into the repository.
+To modify the translation in your project, edit the `messages_*.properties` files located inside `com.haulmont` package. If you think that some translation is incorrect, please send us your variant (as a pull request or individual files), and we will include it into the repository.
 
 ## Creating a New Translation
 
