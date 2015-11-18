@@ -77,7 +77,7 @@ If you want to translate all messages in XLS, do the following:
 		
 Now you have the set of `messages_zz.properties` files which you can copy into your project as explained above.
 
-We would appreciate it if you could send us your translations to include in the repository!
+We would appreciate it if you could send us your translations to include to the repository!
 
 ## Credits
 
