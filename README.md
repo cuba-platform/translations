@@ -49,9 +49,11 @@ If you want to translate all messages in XLS, do the following:
 	- Run `gradlew assemble`.
 	- Unzip the contents of `tools/mp2xls/build/install/mp2xls-*.zip` archive to a local directory.
 
-- Read English messages into the XLS file by running the following command:
+- Read English messages into the XLS file. In the command line, go to the `bin` subdirectory of the directory where you unpacked **mp2xls** on the previous step and run the following command:
 	
-		bin/mp2xls -r -d {absolute path to repo}/content/en/{version}/cuba -f {absolute path to XLS}/cuba.xls -l en
+		mp2xls -r -d {repo_path}/content/en/{version}/cuba -f {xls_path}/cuba.xls -l en
+	
+	Here and below `{repo_path}` is the absolute path to the root of the cloned or unzipped translation repository, `{xls_path}` is the absolute path to the directory where the XLS file will be created.
 
 - Open the XLS file and add a new column for your language next to the `default` column. Give it a title denoting the language, for example `zz`.
 
@@ -59,7 +61,7 @@ If you want to translate all messages in XLS, do the following:
 
 - Write translated messages back into files:
 	
-		bin/mp2xls -w -d {absolute path to repo}/content/zz/{version}/cuba -f {absolute path to XLS}/cuba.xls -l zz
+		mp2xls -w -d {repo_path}/content/zz/{version}/cuba -f {xls_path}/cuba.xls -l zz
 
 Now you have the set of `messages_zz.properties` files which you can copy into your project as explained above.
 
