@@ -32,7 +32,7 @@ To localize the common components, it is sufficient to translate only the _main 
 
 - Copy the following English files from `content/en/{version}/cuba/modules` directory to your project and rename them for the required locale (`zz` in this example):
 	- `gui/src/com/haulmont/cuba/gui/messages.properties` to `{project_root}/modules/gui/src/com/haulmont/cuba/gui/messages_zz.properties`
-	- `web/src/com/haulmont/cuba/web/messages.properties` to `{project_root}/modules/gui/src/com/haulmont/cuba/gui/messages_zz.properties`
+	- `web/src/com/haulmont/cuba/web/messages.properties` to `{project_root}/modules/web/src/com/haulmont/cuba/web/messages_zz.properties`
 	- `desktop/src/com/haulmont/cuba/desktop/messages.properties` to `{project_root}/modules/desktop/src/com/haulmont/cuba/desktop/messages_zz.properties` (only if you use the **desktop** module)
 - Translate messages in the copied files.
 - Add the new locale to the _Project Properties_ > _Available locales_ list, for example `Zzzzzz|zz`.
