@@ -159,11 +159,7 @@ public class LocalizationBatchFileWriter {
         messageFile.createNewFile();
 
         try (PrintWriter writer = new PrintWriter(messageFile, "UTF-8")) {
-            writer.println("#\n" +
-                    "# Copyright (c) 2014 Haulmont Technology Ltd. All Rights Reserved.\n" +
-                    "# Haulmont Technology proprietary and confidential.\n" +
-                    "# Use is subject to license terms.\n" +
-                    "#");
+            writer.println("#");
 
             String prev = "#";
             for (String str : stringsToPrint) {

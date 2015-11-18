@@ -56,8 +56,6 @@ sourceSets {
 
 distZip {
     destinationDir = new File("$buildDir/install")
-    def dateString = new SimpleDateFormat('ddMMyyyy-HHmm').format(new Date())
-    archiveName = "mp2xls-${branchVersion}-${dateString}.${extension}"
 }
 
 task read(dependsOn: ['assemble'], description: 'Read properties ') << {
