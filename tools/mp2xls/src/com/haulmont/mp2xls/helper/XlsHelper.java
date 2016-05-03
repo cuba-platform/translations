@@ -16,6 +16,7 @@
 
 package com.haulmont.mp2xls.helper;
 
+import com.haulmont.mp2xls.exceptions.CellTypeIsNotSupportedException;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.ss.usermodel.Cell;
@@ -51,7 +52,7 @@ public class XlsHelper {
                 */
                 return getFormulaCellValue(cell/*, formattedCellValue*/);
             default:
-                throw new IllegalStateException(String.format("Cell type '%s' is not supported", cell.getCellType()));
+                throw new CellTypeIsNotSupportedException(cell);
         }
     }
 
