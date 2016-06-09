@@ -82,3 +82,5 @@ We would appreciate it if you could send us your translations to include in the 
 ## Credits
 
 The German translation is provided by <a href="http://www.road-to-cuba-and-beyond.com/" target="_blank">Mario David</a>.
+
+The Spanish translation is provided by Mario Alberto Medina Rojas.
