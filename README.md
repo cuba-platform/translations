@@ -86,3 +86,5 @@ The German translation is provided by <a href="http://www.road-to-cuba-and-beyon
 The Spanish translation is provided by Mario Alberto Medina Rojas.
 
 The Danish translation is provided by Torben Merrald.
+
+The Dutch translation is provided by BeaTell.
