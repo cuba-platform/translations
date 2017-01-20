@@ -13,7 +13,7 @@ You can use the repository contents in the following ways:
 
 - Clone the repository or download as ZIP file.
 - Go to `contents` directory and find a translation for your language and platform version.
-- Copy `modules` directory for each used base project to your project root directory. For example, if your project is based on **cuba** and **reports** of the platform version 6.0.2, and you want to use the German translation, copy `content/de/6_0/cuba/modules` and `content/de/6_0/reports/modules` directories.
+- Copy `modules` directory for each used application component to your project root directory. For example, if your project is based on **cuba** and **reports** of the platform version 6.0.2, and you want to use the German translation, copy `content/de/6_0/cuba/modules` and `content/de/6_0/reports/modules` directories.
 - Add the new locale to the _Project Properties_ > _Available locales_ list in Studio, for example `Deutsch|de`.
 - Restart your application server.
 
@@ -28,7 +28,7 @@ If the repository does not contain a translation to your language, you can make 
 
 ### Common Components Translation
 
-To localize the common components, it is sufficient to translate only the _main message packs_ of the **cuba** base project:
+To localize the common components, it is sufficient to translate only the _main message packs_ of the **cuba** application component:
 
 - Copy the following English files from `content/en/{version}/cuba/modules` directory to your project and rename them for the required locale (`zz` in this example):
 	- `gui/src/com/haulmont/cuba/gui/messages.properties` to `{project_root}/modules/gui/src/com/haulmont/cuba/gui/messages_zz.properties`
@@ -81,7 +81,7 @@ We would appreciate it if you could send us your translations to include in the 
 
 ## Credits
 
-The German translation is provided by <a href="http://www.road-to-cuba-and-beyond.com/" target="_blank">Mario David</a>.
+The German translation is provided by <a href="http://www.road-to-cuba-and-beyond.com/" target="_blank">Mario David</a> and Matthias Hamann.
 
 The Spanish translation is provided by Mario Alberto Medina Rojas.
 
