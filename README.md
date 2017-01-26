@@ -88,3 +88,5 @@ The Spanish translation is provided by Mario Alberto Medina Rojas.
 The Danish translation is provided by Torben Merrald.
 
 The Dutch translation is provided by Berend Tel.
+
+The Portuguese translation is provided by Pedro Armelim.
