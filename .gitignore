@@ -6,3 +6,4 @@ build
 *.xls
 out
 xls
+.idea/
