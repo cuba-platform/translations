@@ -1,0 +1,1 @@
+java -cp .\lib\groovy-all-2.4.7.jar groovy.lang.GroovyShell CollectMessages.groovy %*
