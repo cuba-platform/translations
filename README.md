@@ -90,3 +90,8 @@ The Danish translation is provided by Torben Merrald.
 The Dutch translation is provided by Berend Tel.
 
 The Portuguese translation is provided by Pedro Armelim.
+
+The Simplified Chinese translation is provided by GUORUI LV.
+
+The Romanian translation is provided by Sorin Federiga.
+
