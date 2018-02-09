@@ -30,7 +30,11 @@ def moduleSrcDir = new File(moduleDir, 'src')
 if (moduleSrcDir.exists()) {
     def orderedMap = new LinkedHashMap<String, String>();
 
-    moduleSrcDir.eachFileRecurse { file ->
+    List<File> files = []
+    moduleSrcDir.eachFileRecurse { files.add(it) }
+    files.sort { it.path }
+
+    files.each { file ->
         if (file.name == "messages${suffix}.properties") {
             def properties = new Properties()
             file.withReader('UTF-8') {
