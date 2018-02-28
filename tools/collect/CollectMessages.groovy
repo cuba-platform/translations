@@ -62,8 +62,13 @@ if (moduleSrcDir.exists()) {
         File dstFile = new File(dstDir, "${srcDir.name}/modules/${moduleName}/src/${mainMessagePack.replace('.', '/')}/messages${suffix}.properties")
         dstFile.parentFile?.mkdirs()
         dstFile.withWriter('UTF-8') { writer ->
+            def include = orderedMap.get('@include')
+            if (include)
+                writer.write('@include = ' + include + '\n')
+
             orderedMap.entrySet().each {
-                writer.write(it.key + ' = ' + it.value + '\n')
+                if (it.key != '@include')
+                    writer.write(it.key + ' = ' + it.value + '\n')
             }
         }
     }

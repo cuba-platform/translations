@@ -8,7 +8,7 @@
 # Example of copying English CUBA messages to zz translation folder:
 # ./CollectCubaMessages.sh /Users/me/translations/content/en/cuba /Users/me/translations/content/zz
 
-./CollectMessages.sh $1 $2 global com.haulmont.cuba.global $3
+./CollectMessages.sh $1 $2 global com.haulmont.cuba $3
 ./CollectMessages.sh $1 $2 core com.haulmont.cuba.core $3
 ./CollectMessages.sh $1 $2 gui com.haulmont.cuba.gui $3
 ./CollectMessages.sh $1 $2 web com.haulmont.cuba.web $3
