@@ -61,3 +61,5 @@ The Simplified Chinese translation is provided by GUORUI LV.
 The Romanian translation is provided by Sorin Federiga.
 
 The Italian translation is provided by Paolo Furini.
+
+The French translation is provided by Olga Shiryaeva.
