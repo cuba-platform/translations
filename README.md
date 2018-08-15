@@ -61,7 +61,7 @@ The Dutch translation is provided by Berend Tel.
 
 The Portuguese translation is provided by Pedro Armelim.
 
-The Brazilian Portuguese translation is provided be [petersonbr](https://github.com/petersonbr)
+The Brazilian Portuguese translation is provided be [petersonbr](https://github.com/petersonbr).
 
 The Simplified Chinese translation is provided by GUORUI LV.
 
