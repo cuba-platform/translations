@@ -13,7 +13,10 @@ You can use the repository contents in the following ways:
 
 - Clone the repository and checkout a branch corresponding to the platform version used in your project.
 - Find your language in the `content` directory.
-- Copy `modules` directory for each used application component to your project's root directory. For example, if your project is based on **cuba** and **reports**, and you need the German translation, copy `content/de/cuba/modules` and `content/de/reports/modules` directories.
+- Copy `modules` directory for each used application component to your project's root directory. For example, if your project is based on **cuba** and **reports**, and you need the German translation, copy `content/de/cuba/modules` and `content/de/reports/modules` directories. 
+
+    If your project doesn't contain the `gui` module, copy the contents of the translation's `modules/gui` folder to your project's `web` module. For example, if you are applying German translation of the **cuba** app component, your `web` module must contain the `modules/web/src/com/haulmont/cuba/gui/messages_de.properties` file.
+
 - Optionally, you can remove `message.properties` files with English messages from the copied directories.
 - Add the new locale to the _Project Properties_ > _Available locales_ list in Studio, for example `Deutsch|de`.
 - Restart your application server.
@@ -55,6 +58,8 @@ The Danish translation is provided by Torben Merrald.
 The Dutch translation is provided by Berend Tel.
 
 The Portuguese translation is provided by Pedro Armelim.
+
+The Brazilian Portuguese translation is provided by Peterson Machado.
 
 The Simplified Chinese translation is provided by GUORUI LV.
 
