@@ -68,3 +68,5 @@ The Romanian translation is provided by Sorin Federiga.
 The Italian translation is provided by Paolo Furini.
 
 The French translation is provided by Olga Shiryaeva.
+
+The Turkish translation is provided by Halil İbrahim Karaalp.
