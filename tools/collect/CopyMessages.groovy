@@ -12,11 +12,14 @@ File srcDir = new File(args[0])
 File dstDir = new File(args[1])
 
 srcDir.eachFileRecurse { file->
-    if (file.name.endsWith('.properties')) {
+	if (file.name.endsWith('.properties')) {
         def relPath = srcDir.toPath().relativize(file.toPath())
         def dstPath = dstDir.toPath().resolve(relPath)
         if (Files.exists(dstPath)) {
             Files.copy(file.toPath(), dstPath, StandardCopyOption.REPLACE_EXISTING)
-        }
+        } else {
+			Files.createDirectories(dstPath);
+			Files.copy(file.toPath(), dstPath, StandardCopyOption.REPLACE_EXISTING)
+		}
     }
 }
