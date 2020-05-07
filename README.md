@@ -77,3 +77,5 @@ The Italian translation is provided by Paolo Furini.
 The French translation is provided by Olga Shiryaeva and Ange Diambote.
 
 The Turkish translation is provided by Halil İbrahim Karaalp.
+
+The Greek translation is provided by Panos Bariamis.
