@@ -79,3 +79,5 @@ The French translation is provided by Olga Shiryaeva and Ange Diambote.
 The Turkish translation is provided by Halil İbrahim Karaalp.
 
 The Greek translation is provided by Panos Bariamis.
+
+The Traditional Chinese translation is provided by Peter Liang.
